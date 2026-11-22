@@ -2,13 +2,222 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fathi SKOL</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fathi SKOL | Portal Digital</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1f33;
+      color: #ffffff;
+    }
+
+    header {
+      background: #102940;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #29435b;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #f5cb69;
+      letter-spacing: 2px;
+    }
+
+    .header-label {
+      color: #d5dfeb;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 95px 20px 80px;
+      text-align: center;
+      background: linear-gradient(
+        145deg,
+        #153650,
+        #0b1f33
+      );
+    }
+
+    .subtitle {
+      color: #f5cb69;
+      font-size: 13px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      max-width: 800px;
+      margin: 25px auto;
+      line-height: 1.2;
+    }
+
+    .description {
+      color: #d5dfeb;
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f5cb69;
+      color: #102940;
+      padding: 15px 30px;
+      border-radius: 9px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffe3a0;
+      transform: translateY(-3px);
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #f5cb69;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: #1a3a55;
+      border: 1px solid #31516c;
+      border-radius: 16px;
+      padding: 35px 25px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #f5cb69;
+    }
+
+    .card-icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #f5cb69;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #d5dfeb;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #29435b;
+      color: #a9bdce;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      .header-label {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 18px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Selamat Datang ke Fathi SKOL!</h1>
-    <p>Ini laman web pertama saya menggunakan GitHub.</p>
-    <p>Dibina dengan bantuan ChatGPT.</p>
+
+  <header>
+    <div class="logo">✦ FATHI SKOL</div>
+    <div class="header-label">Portal Digital Sekolah</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="subtitle">
+        PORTAL DIGITAL SEKOLAH
+      </div>
+
+      <h1>Selamat Datang ke Fathi SKOL</h1>
+
+      <p class="description">
+        Belajar, Berkarya dan Berinovasi
+      </p>
+
+      <a href="#portal" class="btn">
+        Terokai Portal
+      </a>
+    </section>
+
+    <section class="content" id="portal">
+      <h2 class="section-title">Terokai Portal Kami</h2>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Portfolio PSV</h3>
+          <p>
+            Ruang digital untuk mengurus dan
+            mempamerkan hasil karya Pendidikan
+            Seni Visual.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <h3>Bahan PdP</h3>
+          <p>
+            Koleksi bahan pengajaran dan
+            pembelajaran untuk menyokong
+            aktiviti pendidikan.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Fathi SKOL | Portal Digital Pendidikan
+  </footer>
+
 </body>
 </html>
